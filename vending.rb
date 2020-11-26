@@ -100,15 +100,17 @@ end
 # drink.add_item("水", 100)
 # drink.add_item("レッドブル", 200)
 # items = drink.current_item
-# vm = VendingMachine.new(items)
+#誤　 vm = VendingMachine.new(items)
+#正　 vm = VendingMachine.new(items: items)
 # vm.slot_money (1000)
 # vm.slot_money (777)
 # vm.menu
 # vm.purchase(0)
 
 # drink.item_info
+# vm.item_info
 # drink.item_reset
 # vm.judge(0)
 # vm.return_money
 # vm.sales
-# vm.item_info
+# vm.current_slot_money
